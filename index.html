@@ -1,0 +1,466 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EduLearn - Learn new skills and build your future with quality online courses.">
+    <title>SMART - Online Learning Platform</title>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-5 md:px-8 py-4 flex items-center justify-between">
+
+            <a href="#" class="text-2xl font-extrabold text-emerald-600">
+                SMART<span class="text-gray-900">.</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center gap-8 font-medium">
+                <a href="#" data-translate="home" class="text-emerald-600">Home</a>
+                <a href="about.html" data-translate="about" class="hover:text-emerald-600 transition">About</a>
+                <a href="courses.html" data-translate="courses" class="hover:text-emerald-600 transition">Courses</a>
+                <a href="contact.html" data-translate="contact" class="hover:text-emerald-600 transition">Contact</a>
+                <a href="dashboard.html"
+   class="bg-gray-900 text-white px-5 py-2.5 rounded-lg hover:bg-gray-800 transition">
+   Dashboard
+</a>
+            </div>
+
+            <!-- Desktop Actions -->
+            <div class="hidden md:flex items-center gap-3">
+                <button onclick="changeLanguage('en')"
+                    class="border border-gray-200 px-3 py-2 rounded-lg hover:bg-emerald-50">EN</button>
+
+                <button onclick="changeLanguage('am')"
+                    class="border border-gray-200 px-3 py-2 rounded-lg hover:bg-emerald-50">አማ</button>
+
+                <a href="login.html" data-translate="login"
+                    class="text-emerald-600 font-semibold px-3">Login</a>
+
+                <a href="register.html" data-translate="register"
+                    class="bg-emerald-600 text-white px-5 py-2.5 rounded-lg hover:bg-emerald-700 transition">
+                    Register
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menuBtn"
+                class="md:hidden text-3xl text-emerald-700"
+                aria-label="Open menu">
+                ☰
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobileMenu"
+            class="hidden md:hidden border-t bg-white px-6 py-5 space-y-5">
+
+            <a href="#" data-translate="home" class="block">Home</a>
+            <a href="#about" data-translate="about" class="block">About</a>
+            <a href="#courses" data-translate="courses" class="block">Courses</a>
+            <a href="#contact" data-translate="contact" class="block">Contact</a>
+
+            <div class="flex flex-wrap items-center gap-3 pt-3">
+                <button onclick="changeLanguage('en')"
+                    class="border px-3 py-2 rounded-lg">EN</button>
+
+                <button onclick="changeLanguage('am')"
+                    class="border px-3 py-2 rounded-lg">አማ</button>
+
+                <a href="#contact" data-translate="login"
+                    class="text-emerald-600 font-semibold">Login</a>
+
+                <a href="#contact" data-translate="register"
+                    class="bg-emerald-600 text-white px-4 py-2 rounded-lg">Register</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <section class="bg-gradient-to-br from-emerald-50 via-white to-green-100">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
+
+            <!-- Hero Text -->
+            <div>
+                <span data-translate="welcome"
+                    class="inline-block bg-emerald-100 text-emerald-700 px-5 py-2 rounded-full text-sm font-semibold">
+                    Welcome to SMART
+                </span>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mt-7">
+                    <span data-translate="hero1">Learn Skills.</span>
+                    <span data-translate="hero2" class="text-emerald-600 block">
+                        Build Your Future.
+                    </span>
+                </h1>
+
+                <p data-translate="heroDescription"
+                    class="text-gray-600 text-lg leading-8 mt-6 max-w-xl">
+                    Discover quality online courses, learn from experts
+                    and develop the skills you need for your future.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 mt-9">
+                    <a href="#courses" data-translate="explore"
+                        class="text-center bg-emerald-600 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:bg-emerald-700 hover:-translate-y-1 transition">
+                        Explore Courses →
+                    </a>
+
+                    <a href="#about" data-translate="learnMore"
+                        class="text-center border-2 border-emerald-600 text-emerald-700 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition">
+                        Learn More
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-4 mt-10">
+                    <div class="flex -space-x-3">
+                        <img src="https://i.pravatar.cc/80?img=12"
+                            alt="Student" class="w-10 h-10 rounded-full border-2 border-white">
+                        <img src="https://i.pravatar.cc/80?img=32"
+                            alt="Student" class="w-10 h-10 rounded-full border-2 border-white">
+                        <img src="https://i.pravatar.cc/80?img=47"
+                            alt="Student" class="w-10 h-10 rounded-full border-2 border-white">
+                    </div>
+
+                    <p class="text-sm text-gray-600">
+                        <span data-translate="joinStudents" class="font-bold text-gray-900">
+                            Join thousands of learners
+                        </span>
+                        <span class="block text-yellow-500">★★★★★</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="relative">
+                <img
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1000"
+                    alt="Students learning together"
+                    class="w-full h-80 sm:h-96 md:h-[480px] object-cover rounded-3xl shadow-2xl">
+
+                <div class="absolute -bottom-5 -left-3 sm:-left-6 bg-white p-4 sm:p-5 rounded-2xl shadow-xl">
+                    <p data-translate="learningTogether" class="font-bold text-gray-900">
+                        Learning Together
+                    </p>
+                    <p data-translate="futureStartsHere" class="text-sm text-gray-500 mt-1">
+                        Your future starts here!
+                    </p>
+                </div>
+
+                <div class="absolute -top-5 -right-3 sm:-right-5 bg-emerald-600 text-white p-4 rounded-2xl shadow-lg">
+                    <p class="text-2xl font-bold">100%</p>
+                    <p data-translate="dedication" class="text-xs">Dedication</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- STATISTICS SECTION -->
+    <section class="bg-emerald-700 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+
+            <div>
+                <h2 class="text-3xl md:text-4xl font-extrabold">5K+</h2>
+                <p data-translate="students" class="text-emerald-100 mt-2">Students</p>
+            </div>
+
+            <div>
+                <h2 class="text-3xl md:text-4xl font-extrabold">50+</h2>
+                <p data-translate="coursesCount" class="text-emerald-100 mt-2">Online Courses</p>
+            </div>
+
+            <div>
+                <h2 class="text-3xl md:text-4xl font-extrabold">20+</h2>
+                <p data-translate="instructors" class="text-emerald-100 mt-2">Expert Instructors</p>
+            </div>
+
+            <div>
+                <h2 class="text-3xl md:text-4xl font-extrabold">95%</h2>
+                <p data-translate="satisfaction" class="text-emerald-100 mt-2">Student Satisfaction</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 px-6 md:px-8">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+            <div>
+                <img
+                    src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=900"
+                    alt="Students studying"
+                    class="w-full h-80 md:h-96 object-cover rounded-2xl shadow-lg">
+            </div>
+
+            <div>
+                <span data-translate="aboutLabel"
+                    class="text-emerald-600 font-bold uppercase tracking-wider text-sm">
+                    About Our Platform
+                </span>
+
+                <h2 data-translate="aboutTitle"
+                    class="text-3xl md:text-4xl font-extrabold mt-4">
+                    Education That Builds Your Future
+                </h2>
+
+                <p data-translate="aboutDescription"
+                    class="text-gray-600 leading-8 mt-6">
+                    SMART helps students gain practical knowledge and
+                    professional skills through accessible online education.
+                    Learn at your own pace and grow your future.
+                </p>
+
+                <a href="#courses" data-translate="discover"
+                    class="inline-block mt-7 bg-emerald-600 text-white px-7 py-3 rounded-lg hover:bg-emerald-700 transition">
+                    Discover Courses →
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- WHY CHOOSE US -->
+    <section class="bg-gray-50 py-20 px-6 md:px-8">
+        <div class="max-w-7xl mx-auto">
+
+            <div class="text-center mb-12">
+                <span data-translate="whyLabel"
+                    class="text-emerald-600 font-semibold">Our Advantages</span>
+
+                <h2 data-translate="whyTitle"
+                    class="text-3xl md:text-4xl font-extrabold mt-3">
+                    Why Choose SMART?
+                </h2>
+
+                <p data-translate="whyDescription"
+                    class="text-gray-500 mt-4 max-w-2xl mx-auto">
+                    Everything you need to improve your knowledge and skills.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition">
+                    <div class="w-14 h-14 bg-emerald-100 rounded-xl flex items-center justify-center text-3xl">📚</div>
+                    <h3 data-translate="feature1Title" class="text-xl font-bold mt-5">Quality Courses</h3>
+                    <p data-translate="feature1Description" class="text-gray-500 leading-7 mt-3">
+                        Learn useful skills through well-organized courses.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition">
+                    <div class="w-14 h-14 bg-emerald-100 rounded-xl flex items-center justify-center text-3xl">👨‍🏫</div>
+                    <h3 data-translate="feature2Title" class="text-xl font-bold mt-5">Expert Instructors</h3>
+                    <p data-translate="feature2Description" class="text-gray-500 leading-7 mt-3">
+                        Learn from experienced teachers and professionals.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition">
+                    <div class="w-14 h-14 bg-emerald-100 rounded-xl flex items-center justify-center text-3xl">⏰</div>
+                    <h3 data-translate="feature3Title" class="text-xl font-bold mt-5">Learn Anytime</h3>
+                    <p data-translate="feature3Description" class="text-gray-500 leading-7 mt-3">
+                        Study at your own pace and manage your time.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- COURSES SECTION -->
+    <section id="courses" class="py-20 px-6 md:px-8">
+        <div class="max-w-7xl mx-auto">
+
+            <div class="text-center mb-12">
+                <span data-translate="coursesLabel"
+                    class="text-emerald-600 font-semibold">Start Learning</span>
+
+                <h2 data-translate="popularCourses"
+                    class="text-3xl md:text-4xl font-extrabold mt-3">
+                    Popular Courses
+                </h2>
+
+                <p data-translate="coursesDescription"
+                    class="text-gray-500 mt-4">
+                    Start learning something new today.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Course 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-2 transition">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
+                        alt="Web development"
+                        class="w-full h-52 object-cover">
+
+                    <div class="p-6">
+                        <span data-translate="courseCategory1"
+                            class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">
+                            DEVELOPMENT
+                        </span>
+
+                        <h3 data-translate="course1Title" class="text-xl font-bold mt-4">
+                            Web Development
+                        </h3>
+
+                        <p data-translate="course1Description" class="text-gray-500 mt-3 leading-7">
+                            Learn HTML, CSS, JavaScript and build modern websites.
+                        </p>
+
+                        <a href="#contact" data-translate="courseLearnMore"
+                            class="inline-block mt-5 text-emerald-600 font-bold hover:text-emerald-800">
+                            Learn More →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-2 transition">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800"
+                        alt="Programming"
+                        class="w-full h-52 object-cover">
+
+                    <div class="p-6">
+                        <span data-translate="courseCategory2"
+                            class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">
+                            PROGRAMMING
+                        </span>
+
+                        <h3 data-translate="course2Title" class="text-xl font-bold mt-4">
+                            Programming
+                        </h3>
+
+                        <p data-translate="course2Description" class="text-gray-500 mt-3 leading-7">
+                            Improve your coding and problem-solving skills.
+                        </p>
+
+                        <a href="#contact" data-translate="courseLearnMore"
+                            class="inline-block mt-5 text-emerald-600 font-bold hover:text-emerald-800">
+                            Learn More →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-2 transition">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800"
+                        alt="Data analytics"
+                        class="w-full h-52 object-cover">
+
+                    <div class="p-6">
+                        <span data-translate="courseCategory3"
+                            class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">
+                            DATA
+                        </span>
+
+                        <h3 data-translate="course3Title" class="text-xl font-bold mt-4">
+                            Data Analytics
+                        </h3>
+
+                        <p data-translate="course3Description" class="text-gray-500 mt-3 leading-7">
+                            Understand data and discover useful insights.
+                        </p>
+
+                        <a href="#contact" data-translate="courseLearnMore"
+                            class="inline-block mt-5 text-emerald-600 font-bold hover:text-emerald-800">
+                            Learn More →
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CALL TO ACTION -->
+    <section class="bg-emerald-700 py-16 px-6">
+        <div class="max-w-4xl mx-auto text-center text-white">
+            <h2 data-translate="ctaTitle"
+                class="text-3xl md:text-4xl font-extrabold">
+                Ready to Start Learning?
+            </h2>
+
+            <p data-translate="ctaDescription"
+                class="text-emerald-100 mt-5 leading-7">
+                Take the next step toward your future. Start learning today!
+            </p>
+
+            <a href="#courses" data-translate="ctaButton"
+                class="inline-block mt-8 bg-white text-emerald-700 px-8 py-4 rounded-xl font-bold hover:bg-emerald-50 transition">
+                Get Started →
+            </a>
+        </div>
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 px-6 md:px-8">
+        <div class="max-w-3xl mx-auto text-center">
+
+            <span data-translate="contactLabel"
+                class="text-emerald-600 font-semibold">Get In Touch</span>
+
+            <h2 data-translate="contactTitle"
+                class="text-3xl md:text-4xl font-extrabold mt-3">
+                Contact Us
+            </h2>
+
+            <p data-translate="contactDescription"
+                class="text-gray-500 mt-5 leading-7">
+                Have a question? We would love to hear from you.
+            </p>
+
+            <a href="mailto:info@example.com"
+                class="inline-block mt-8 bg-emerald-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-emerald-700 transition">
+                <span data-translate="sendEmail">Send Email</span> ✉
+            </a>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-950 text-white py-10 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+
+            <h2 class="text-2xl font-extrabold text-emerald-400">
+                SMART
+            </h2>
+
+            <p data-translate="footerDescription" class="text-gray-400 mt-3">
+                Learn today. Lead tomorrow.
+            </p>
+
+            <div class="flex justify-center flex-wrap gap-6 mt-6 text-sm">
+                <a href="#" data-translate="home" class="hover:text-emerald-400">Home</a>
+                <a href="about.html" data-translate="about" class="hover:text-emerald-400">About</a>
+                <a href="#courses" data-translate="courses" class="hover:text-emerald-400">Courses</a>
+                <a href="#contact" data-translate="contact" class="hover:text-emerald-400">Contact</a>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-6">
+                <p class="text-gray-500 text-sm *:first-letter:capitalize *:first-letter:font-bold *:">
+                    © 2026 Abdulmajed Tofik. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="./src/js/main.js"></script>
+
+</body>
+</html>

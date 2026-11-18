@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | EduLearn</title>
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <nav class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="./index.html" class="text-2xl font-bold text-emerald-600">EduLearn</a>
+      <div class="hidden md:flex gap-7">
+        <a href="./index.html" class="hover:text-emerald-600">Home</a>
+        <a href="./about.html" class="hover:text-emerald-600">About</a>
+        <a href="./courses.html" class="hover:text-emerald-600">Courses</a>
+        <a href="./contact.html" class="text-emerald-600 font-bold">Contact</a>
+                  
+    </div>
+      <a href="./login.html" class="bg-emerald-600 text-white px-5 py-2 rounded-lg">Login</a>
+    </div>
+  </nav>
+
+  <header class="bg-emerald-700 text-white text-center py-20 px-6">
+    <p class="text-emerald-200 font-semibold mb-3">WE ARE HERE TO HELP</p>
+    <h1 class="text-4xl md:text-5xl font-bold mb-5">Contact Us</h1>
+    <p class="max-w-2xl mx-auto text-emerald-50">
+      Have a question or need support? We would love to hear from you.
+    </p>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 py-16">
+    <div class="grid lg:grid-cols-2 gap-12">
+
+      <section>
+        <p class="text-emerald-600 font-semibold mb-3">GET IN TOUCH</p>
+        <h2 class="text-3xl font-bold mb-5">Let's Talk About Your Learning Journey</h2>
+        <p class="text-gray-600 leading-7 mb-8">
+          Send us your questions, feedback or suggestions.
+          Our team will be happy to help.
+        </p>
+
+        <div class="space-y-6">
+          <div class="flex gap-4 items-center">
+            <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-2xl">📧</div>
+            <div>
+              <h3 class="font-bold">Email Address</h3>
+              <p class="text-gray-500">abdulmajedtofik@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 items-center">
+            <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-2xl">📞</div>
+            <div>
+              <h3 class="font-bold">Phone Number</h3>
+              <p class="text-gray-500">+251927957272</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 items-center">
+            <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-2xl">📍</div>
+            <div>
+              <h3 class="font-bold">Location</h3>
+              <p class="text-gray-500">Ethiopia,Hossana</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white p-8 rounded-2xl shadow-lg">
+        <h2 class="text-2xl font-bold mb-6">Send Us a Message</h2>
+
+        <form id="contactForm" class="space-y-5">
+          <div>
+            <label for="contactName" class="block font-semibold text-sm mb-2">Your FullName</label>
+            <input id="contactName" type="text" required placeholder="Abdulmajed Tofik"
+              class="w-full px-4 py-3 border rounded-lg outline-none focus:ring-2 focus:ring-emerald-500">
+          </div>
+
+          <div>
+            <label for="contactEmail" class="block font-semibold text-sm mb-2">Email Address</label>
+            <input id="contactEmail" type="email" required placeholder="abdulmajedtofik@gmail.com"
+              class="w-full px-4 py-3 border rounded-lg outline-none focus:ring-2 focus:ring-emerald-500">
+          </div>
+
+          <div>
+            <label for="contactSubject" class="block font-semibold text-sm mb-2">Subject</label>
+            <input id="contactSubject" type="text" required placeholder="Message subject"
+              class="w-full px-4 py-3 border rounded-lg outline-none focus:ring-2 focus:ring-emerald-500">
+          </div>
+
+          <div>
+            <label for="contactMessage" class="block font-semibold text-sm mb-2">Message</label>
+            <textarea id="contactMessage" rows="5" required placeholder="Write your message..."
+              class="w-full px-4 py-3 border rounded-lg outline-none focus:ring-2 focus:ring-emerald-500"></textarea>
+          </div>
+
+          <button type="submit"
+            class="w-full bg-emerald-600 text-white py-3 rounded-lg font-semibold hover:bg-emerald-700 transition">
+            Send Message
+          </button>
+
+          <p id="contactStatus" class="text-center text-sm" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="bg-gray-900 text-gray-300 text-center py-8">
+    © 2026 SMART. All rights reserved.
+  </footer>
+
+  <script src="./src/js/contact.js"></script>
+</body>
+</html>
